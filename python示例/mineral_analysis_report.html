@@ -1,0 +1,325 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>矿物制品行业分析报告</title>
+        <style>
+            body {font-family:Arial,sans-serif;margin:20px;}
+            h1,h2 {color:#2e6c80;}
+            table {border-collapse:collapse;width:100%;margin-bottom:20px;}
+            th,td {border:1px solid #ddd;padding:8px;text-align:left;}
+            th {background-color:#f2f2f2;}
+            .plot {margin:20px 0;}
+            .model-results {margin-bottom:30px;}
+        </style>
+    </head>
+    <body>
+        <h1>矿物制品行业分析报告</h1>
+        
+        <h2>1. 行业股票概览</h2>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>name</th>
+      <th>symbol</th>
+      <th>list_date</th>
+      <th>area</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>英洛华</td>
+      <td>795</td>
+      <td>19970808</td>
+      <td>浙江</td>
+    </tr>
+    <tr>
+      <td>中科三环</td>
+      <td>970</td>
+      <td>20000420</td>
+      <td>北京</td>
+    </tr>
+    <tr>
+      <td>欧晶科技</td>
+      <td>1269</td>
+      <td>20220930</td>
+      <td>内蒙</td>
+    </tr>
+    <tr>
+      <td>平安电工</td>
+      <td>1359</td>
+      <td>20240328</td>
+      <td>湖北</td>
+    </tr>
+    <tr>
+      <td>中钢天源</td>
+      <td>2057</td>
+      <td>20060802</td>
+      <td>安徽</td>
+    </tr>
+    <tr>
+      <td>鲁阳节能</td>
+      <td>2088</td>
+      <td>20061130</td>
+      <td>山东</td>
+    </tr>
+    <tr>
+      <td>银河磁体</td>
+      <td>300127</td>
+      <td>20101013</td>
+      <td>四川</td>
+    </tr>
+    <tr>
+      <td>四方达</td>
+      <td>300179</td>
+      <td>20110215</td>
+      <td>河南</td>
+    </tr>
+    <tr>
+      <td>正海磁材</td>
+      <td>300224</td>
+      <td>20110531</td>
+      <td>山东</td>
+    </tr>
+    <tr>
+      <td>三超新材</td>
+      <td>300554</td>
+      <td>20170421</td>
+      <td>江苏</td>
+    </tr>
+  </tbody>
+</table>
+        
+        <h2>2. 价格走势图</h2>
+        <div class="plot">
+            <img src="price_trend.png" alt="价格走势图" width="800">
+        </div>
+        
+        <h2>3. 相关性分析</h2>
+        <div class="plot">
+            <img src="correlation_heatmap.png" alt="相关性热力图" width="800">
+        </div>
+        
+        <h2>4. 统计描述</h2>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>name</th>
+      <th>平均价格</th>
+      <th>年收益率</th>
+      <th>价格标准差</th>
+      <th>最大回撤</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>英洛华</td>
+      <td>7.834785</td>
+      <td>-0.280736</td>
+      <td>3.582198</td>
+      <td>0.921911</td>
+    </tr>
+    <tr>
+      <td>中科三环</td>
+      <td>15.294522</td>
+      <td>3.286964</td>
+      <td>8.929244</td>
+      <td>0.946896</td>
+    </tr>
+    <tr>
+      <td>欧晶科技</td>
+      <td>51.975298</td>
+      <td>0.010309</td>
+      <td>30.517119</td>
+      <td>0.869493</td>
+    </tr>
+    <tr>
+      <td>平安电工</td>
+      <td>25.586520</td>
+      <td>0.177454</td>
+      <td>3.620348</td>
+      <td>0.498634</td>
+    </tr>
+    <tr>
+      <td>中钢天源</td>
+      <td>11.311394</td>
+      <td>0.258993</td>
+      <td>4.287664</td>
+      <td>0.905793</td>
+    </tr>
+    <tr>
+      <td>鲁阳节能</td>
+      <td>16.382615</td>
+      <td>1.448015</td>
+      <td>7.706628</td>
+      <td>0.870841</td>
+    </tr>
+    <tr>
+      <td>银河磁体</td>
+      <td>18.679285</td>
+      <td>-0.036364</td>
+      <td>4.775990</td>
+      <td>0.757686</td>
+    </tr>
+    <tr>
+      <td>四方达</td>
+      <td>10.132507</td>
+      <td>2.411458</td>
+      <td>5.825580</td>
+      <td>0.905620</td>
+    </tr>
+    <tr>
+      <td>正海磁材</td>
+      <td>15.699639</td>
+      <td>0.782609</td>
+      <td>7.926369</td>
+      <td>0.920000</td>
+    </tr>
+    <tr>
+      <td>三超新材</td>
+      <td>26.711599</td>
+      <td>0.055746</td>
+      <td>17.747505</td>
+      <td>0.892739</td>
+    </tr>
+  </tbody>
+</table>
+
+        <h2>5. 层次聚类分析</h2>
+        <div class="plot">
+            <img src="dendrogram.png" alt="层次聚类图" width="800">
+        </div>
+        
+        <h2>6. 聚类分析结果</h2>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>name</th>
+      <th>类别名称</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>英洛华</td>
+      <td>稳健型</td>
+    </tr>
+    <tr>
+      <td>中科三环</td>
+      <td>波动型</td>
+    </tr>
+    <tr>
+      <td>欧晶科技</td>
+      <td>成长型</td>
+    </tr>
+    <tr>
+      <td>平安电工</td>
+      <td>稳健型</td>
+    </tr>
+    <tr>
+      <td>中钢天源</td>
+      <td>波动型</td>
+    </tr>
+    <tr>
+      <td>鲁阳节能</td>
+      <td>成长型</td>
+    </tr>
+    <tr>
+      <td>银河磁体</td>
+      <td>稳健型</td>
+    </tr>
+    <tr>
+      <td>四方达</td>
+      <td>波动型</td>
+    </tr>
+    <tr>
+      <td>正海磁材</td>
+      <td>稳健型</td>
+    </tr>
+    <tr>
+      <td>三超新材</td>
+      <td>成长型</td>
+    </tr>
+  </tbody>
+</table>
+        
+        <h2>7. 模型评估结果</h2>
+        
+        <div class="model-results">
+            <h3>随机森林</h3>
+            <p>MSE: 0.0237</p>
+            <p>R2: 0.9981</p>
+        </div>
+        
+        <div class="model-results">
+            <h3>支持向量机</h3>
+            <p>MSE: 12.2996</p>
+            <p>R2: 0.0210</p>
+        </div>
+        
+        <div class="model-results">
+            <h3>神经网络</h3>
+            <p>MSE: 846.8032</p>
+            <p>R2: -66.4008</p>
+        </div>
+        
+        <div class="model-results">
+            <h3>优化后随机森林</h3>
+            <p>MSE: 0.0226</p>
+            <p>R2: 0.9982</p>
+        </div>
+        
+        
+        <h2>8. 行业新闻</h2>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>title</th>
+      <th>date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>连云港中超石英科技取得一种非金属矿物制品加工粉尘集中处理装置专利</td>
+      <td>金融界网站   2025-04-26 12:06:34</td>
+    </tr>
+    <tr>
+      <td>上海洪歌取得非金属矿物制品加工用废气处理设备专利，提升废气处理效率</td>
+      <td>金融界网站   2025-04-08 10:26:47</td>
+    </tr>
+    <tr>
+      <td>3月10日热点行业分析：医药商业、矿物制品行业领涨</td>
+      <td>大数据复盘   2025-03-10 18:01:29</td>
+    </tr>
+    <tr>
+      <td>3月3日热点行业分析：矿物制品、化工行业领涨</td>
+      <td>大数据复盘   2025-03-03 18:01:31</td>
+    </tr>
+    <tr>
+      <td>科创板收盘播报：科创50指数涨幅0.48%矿物制品类个股表现活跃转自：新华财经新华财经北京2月24日电 （王媛媛）科创50指数2月24日低开，指数早盘冲高回落，午后整体呈震荡盘整的走势，最终小幅收涨...中国金融信息网\n                        \t\t\t\t\t\n                        \t\t\t\t2025-02-24 15:31:20</td>
+      <td>中国金融信息网\n                        \t\t\t\t\t\n                        \t\t\t\t2025-02-24 15:31:20</td>
+    </tr>
+    <tr>
+      <td>2月12日热点行业分析：公共交通、矿物制品行业领涨</td>
+      <td>大数据复盘   2025-02-12 18:01:20</td>
+    </tr>
+    <tr>
+      <td>春宇环保取得一种非金属矿物制品加工清理装置专利，提高了清洁刷的清理效果金融界2025年1月9日消息，国家知识产权局信息显示，重庆市春宇环保科技有限公司取得一项名为“一种非金属矿物制品加工清理装置”的专利，授权公告号CN 222292805 U，申请日期为2024年5月...金融界火线\n                        \t\t\t\t\t\n                        \t\t\t\t2025-01-09 12:30:36</td>
+      <td>金融界火线\n                        \t\t\t\t\t\n                        \t\t\t\t2025-01-09 12:30:36</td>
+    </tr>
+    <tr>
+      <td>四川帕沃可矿物纤维制品集团有限公司被认定为高新技术企业</td>
+      <td>金融界网站   2024-12-30 19:31:05</td>
+    </tr>
+    <tr>
+      <td>安徽智腾取得非金属矿物制品打磨装置专利，能够对打磨时产生的粉尘进行吸附金融界2024年12月26日消息，国家知识产权局信息显示，安徽智腾新型环保建材科技有限公司取得一项名为“一种非金属矿物制品打磨装置”的专利，授权公告号CN 222199993 U ，...金融界火线\n                        \t\t\t\t\t\n                        \t\t\t\t2024-12-26 10:32:20</td>
+      <td>金融界火线\n                        \t\t\t\t\t\n                        \t\t\t\t2024-12-26 10:32:20</td>
+    </tr>
+    <tr>
+      <td>铝、铜初级品等59项出口退税取消、部分矿物制品等229项退税下调，12月1日实施！</td>
+      <td>矿业汇   2024-11-22 20:03:55</td>
+    </tr>
+  </tbody>
+</table>
+    </body>
+    </html>
+    
